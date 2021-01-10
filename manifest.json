@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "Extensão do Corvo Jubileu",
+    "version": "1.0.0",
+    "description":"Uma extensão que faz o corvo jubileu te perseguir enquando estiver navegando na internet",
+    "icons": {"128": "icon-128.png"},
+    "web_accessible_resources": [
+      "img/*.jpg"
+    ],
+    "content_scripts": [{
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": ["index.js"]
+    }]
+  
+  
+  }
+  
